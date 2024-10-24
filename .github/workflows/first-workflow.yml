@@ -7,6 +7,11 @@ jobs:
     steps:
       - name: Print Hello Worldi
         run: echo "Hello, World!"
-      - name: Print Goodby World 
+      
+  say-goodbye:
+    needs: say-hello
+    runs-on: ubuntu-latest
+    if: github.status_code == '0'
+    steps:
+      - name: Print Goodbye world
         run: echo "Goodbye, World!"
-
