@@ -5,6 +5,8 @@ jobs:
   say-hello:
     runs-on: ubuntu-latest
     steps:
-      - name: Print Hello World
+      - name: Print Hello Worldi
         run: echo "Hello, World!"
+      - name: Print Goodby World 
+        run: echo "Goodbye, World!"
 
